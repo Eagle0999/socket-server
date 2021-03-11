@@ -19,6 +19,6 @@ while True:
         break
     print('Server recieved the message from Client: ',data,'\n')
     conn.send(data.upper().encode())
-	print('Server sended the message to Client: ',data.upper())
+    print('Server sended the message to Client: ',data.upper())
 	
 conn.close()
