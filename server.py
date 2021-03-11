@@ -15,6 +15,8 @@ while True:
     data = conn.recv(1024).decode()
     if not data:
         break
+    print('Server recieved the message from Client: ',data.upper(),'\n')
+    print('Server is sending the message to Client: ',data.upper())
     conn.send(data.upper().encode())
 
 conn.close()
